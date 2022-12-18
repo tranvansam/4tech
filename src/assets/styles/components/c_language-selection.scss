@@ -1,0 +1,157 @@
+.language {
+  &__selection {
+    position: relative;
+  }
+
+  &__placeholder {
+    width: 21.33vw;
+    height: 10.67vw;
+    border: 1px solid #afafaf;
+    border-radius: 2.13vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &--flag,
+    &--caret {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    &--flag {
+      height: 80%;
+    }
+
+    &--caret {
+      height: 60%;
+    }
+  }
+
+  &__options {
+    position: absolute;
+    top: 100%;
+    padding-left: 2.67vw;
+    padding-right: 1.6vw;
+    width: 41.6vw;
+    background: #fff;
+    color: #000;
+    border: 1px solid #aaa;
+    border-radius: 2.13vw;
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 0;
+    }
+  }
+
+  &__options &__option {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    &--checked {
+      display: flex;
+      width: 6.4vw;
+    }
+
+    &--flag {
+      height: 10.67vw;
+      display: flex;
+      margin-left: 2.13vw;
+    }
+
+    &--name {
+      margin-left: 1.07vw;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 18px;
+      white-space: nowrap;
+    }
+
+    &:not(:first-child) {
+      border-top: 1px solid #c4c4c4;
+    }
+  }
+}
+
+@media (min-width: 1160px) {
+  .language {
+    &__selection {
+      position: relative;
+    }
+
+    &__placeholder {
+      width: 80px;
+      height: 40px;
+      border: 1px solid #afafaf;
+      border-radius: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      &--flag,
+      &--caret {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__options {
+      position: absolute;
+      top: 100%;
+      padding-left: 8px;
+      padding-right: 8px;
+      width: 156px;
+      background: #fff;
+      color: #000;
+      border: 1px solid #eee;
+      border-radius: 8px;
+
+      &.left {
+        left: 0;
+      }
+
+      &.right {
+        right: 0;
+      }
+    }
+
+    &__options &__option {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      &--checked {
+        display: flex;
+        width: 24px;
+      }
+
+      &--flag {
+        height: 40px;
+        display: flex;
+        margin-left: 8px;
+      }
+
+      &--name {
+        margin-left: 4px;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 18px;
+        white-space: nowrap;
+      }
+
+      &:not(:first-child) {
+        border-top: 1px solid #c4c4c4;
+      }
+    }
+  }
+}

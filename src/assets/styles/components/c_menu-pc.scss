@@ -1,0 +1,21 @@
+.menu-pc {
+  width: 710px;
+  height: 40px;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  &__nav &__item {
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  &__nav &__item &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+}

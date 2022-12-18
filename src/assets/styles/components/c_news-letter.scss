@@ -1,0 +1,23 @@
+.news-letter {
+  &__content {
+    color: #fff;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.9px;
+    text-align: center;
+  }
+
+  &__input {
+    margin-top: 4.27vw;
+  }
+
+  &.pc &__content {
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: normal;
+  }
+
+  &.pc &__input {
+    margin-top: 32px;
+  }
+}

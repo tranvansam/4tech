@@ -1,0 +1,29 @@
+@import './components/index.scss';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.spacer {
+  margin-top: 12.8vw;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media (min-width: 1160px) {
+  .spacer {
+    margin-top: 128px;
+  }
+}
+
