@@ -262,7 +262,7 @@ watch(
           height: 4895px;
 
           .layer-3 {
-            width: 1920px;
+           width: 100vw;//1920px
             height: 1083px;
           }
         }
